@@ -19,7 +19,7 @@ grouped_data = data.groupby(np.arange(len(data)) // 16, as_index=False).mean()
 X_train = grouped_data[xtrain_features].values
 
 # Load and preprocess the y train image
-image_path = "G:\Dr Golnaraghi\Directed Studies Course\Research Reports\7-Maryam-RCB-ua paper IEEE Journal Nemo/image.jpg"
+image_path = "https://raw.githubusercontent.com/smomtahe/RNN-Image-Reconstruction/main/image.jpg"
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 if image is not None:
